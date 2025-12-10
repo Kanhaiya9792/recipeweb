@@ -1,0 +1,155 @@
+/* --- 1. Global Reset & Basic Styling --- */
+body {
+    font-family: Arial, sans-serif; /* Use a common, web-safe font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light, subtle background */
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #4CAF50; /* A friendly, food-related color (green) */
+}
+
+/* --- 2. Header & Navigation --- */
+header {
+    background-color: #2c3e50; /* Darker, contrasting color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    /* Use Flexbox for a simple, responsive navigation bar */
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent; /* For hover effect */
+}
+
+nav a:hover {
+    border-bottom: 2px solid #4CAF50; /* Simple hover effect */
+}
+
+/* --- 3. Main Layout & Sections --- */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the main content */
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* --- 4. Recipe Cards (Browse) --- */
+#recipes {
+    /* Use CSS Grid for a clean, two-column layout of recipes (good beginner concept) */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%; /* Make images fill the card */
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background-color: #45a049;
+}
+
+/* --- 5. Rating System Styling --- */
+.rating {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.star-filled {
+    color: gold; /* Filled stars */
+}
+
+.star-empty {
+    color: #ccc; /* Empty stars */
+}
+
+/* --- 6. Form Styling (Submit Recipe) --- */
+
+#myform{
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    display: flex;
+
+}
+    form label {
+    display:flex; /* Make labels take up the whole line */
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+form input[type="text"], 
+form input[type="search"],
+form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+/* --- 7. Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
